@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'learning-angular';
+  id = 1;
+  title = 'Mixed Martial Arts';
+  author = 'Andre Arnaut';
 }
