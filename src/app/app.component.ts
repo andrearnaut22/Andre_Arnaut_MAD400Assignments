@@ -15,14 +15,16 @@ export class AppComponent {
  constructor() {
    this.martialArt = {
      id: 1025,
-     imageURL: '',
-     body: '<p>Mixed martial arts is a great workout, a great sport, and a great way to learn how to defend yourself.</p>'
+     title: "Martial Arts",
+     description: '<p>Mixed martial arts is a great workout, a great sport, and a great way to learn how to defend yourself.</p>',
+     author: "Andre Arnaut",
+     imgSrc: "https://mark.trademarkia.com/services/logo.ashx?sid=86838304"
    };
    this.processContent(this.martialArt);
  } 
 
  processContent(content: IContent):string {
-   console.log(content.body);
+   console.log(content);
    return content.type ?? "EMPTY";
  }
 }
