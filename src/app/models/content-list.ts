@@ -5,4 +5,11 @@ export class ContentList {
     constructor() {
         this.martialArt = [];
     }
+    get martialArt(): IContent[]{
+        return this.martialArt;
+    }
+
+    addContent(martialArt: IContent){
+        this.martialArt.push(martialArt);
+    }
 }
