@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IContent } from '../models/icontent';
 
 @Component({
   selector: 'app-content-list',
@@ -6,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent {
-
 }
