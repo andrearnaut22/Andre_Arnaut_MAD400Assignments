@@ -9,6 +9,9 @@ import { IContent } from '../models/icontent';
 export class ContentListComponent {
 @Input() contentItemInput?: IContent;
 
+
+//older code from the earlier steps
+
   // martialArts: IContent[];
 
   // constructor() {
