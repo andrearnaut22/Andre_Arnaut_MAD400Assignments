@@ -1,6 +1,6 @@
 export interface IContent {
     id: number,
-    title: string,
+    discipline: string,
     description?: string;
     author: string;
     imgSrc?: string;
