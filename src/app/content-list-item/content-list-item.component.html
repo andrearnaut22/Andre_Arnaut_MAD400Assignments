@@ -1,1 +1,15 @@
-<p>content-list-item works!</p>
+<div *ngIf="contentItemInput">
+
+    <h1>{{contentItemInput.discipline}}</h1>
+    <img [src]="contentItemInput.imgSrc" (click)="imageClicked()">
+    <p [innerHTML]="contentItemInput.description"></p>
+
+    <div class="meta-data">
+        <span class="author">{{contentItemInput.author}}</span>
+        <span class="type">{{contentItemInput.type}}</span>
+    </div>
+    <div class="tags">
+        <span *ngFor="let tag of  contentItemInput.tags">{{tag}}</span>
+    </div>
+
+</div>
