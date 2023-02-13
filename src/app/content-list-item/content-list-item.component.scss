@@ -4,6 +4,13 @@
     margin: auto;
     padding: 12px;
     display: inline-block;
+    &.even-discipline {
+      background-color: #92ecbb;
+    }
+}
+
+:host.odd-discipline {
+  background-color: #b0e0e6;
 }
 
 @mixin bordered-button {
