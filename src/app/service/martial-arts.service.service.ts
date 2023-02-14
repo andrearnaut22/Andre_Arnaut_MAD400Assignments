@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-// import { martialArts } from '../data/mock-content.ts'; <- need to fix the error here
+import { MockContentTs } from '../data/mock-content.ts'; //<- need to fix the error here
 import { IContent } from '../models/icontent';
 
 @Injectable({
@@ -10,7 +10,7 @@ export class MartialArtsServiceService {
 
   constructor() { }
 
-  // getContent(): Observable<IContent[]>  {
-  //   return of(martialArts);
-  // }
+  getContent(): Observable<IContent[]>  {
+    return of(MockContentTs.martialArts);
+  }
 }

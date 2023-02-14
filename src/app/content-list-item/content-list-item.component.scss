@@ -43,7 +43,7 @@ align-items: center;
 padding: 8px 0;
 }
 span.author {
-@include bordered-button-span;
+// @include bordered-button-span;
 color: #fff;
 
 &::before {
@@ -59,7 +59,7 @@ div.tags {
   padding: 8px 0;
 
   span {
-    @include bordered-button-span;
+    // @include bordered-button-span;
     margin-bottom: 8px;
     color: rgb(40, 102, 48);
   }

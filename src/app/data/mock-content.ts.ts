@@ -1,10 +1,8 @@
 import { IContent } from '../models/icontent';
 
 export class MockContentTs {
-    martialArts: IContent[];
-
-  constructor() {
-    this.martialArts = [{
+    public static martialArts: IContent[] = 
+[{
       id: 0,
       discipline: "Wrestling",
       description: "Involves different grappling-type techniques such as clinch fighting, throws and takedowns, joint locks, pins and other grappling holds",
@@ -39,6 +37,6 @@ export class MockContentTs {
       type: "Hybrid",
       tags: ["Sambo", "Contact Sambo", "Hybrid"],
       author: "Andre Arnaut"
-    }]
-    }
+    }];
+    
 }
