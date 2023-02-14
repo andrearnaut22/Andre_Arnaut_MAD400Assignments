@@ -1,0 +1,70 @@
+:host{
+  border: 5px solid rgb(140, 167, 156);
+  width: 200px;
+  margin: auto;
+  padding: 12px;
+  display: inline-block;
+  &.even-discipline {
+    background-color: #92ecbb;
+  }
+}
+
+:host.odd-discipline {
+background-color: #b0e0e6;
+}
+
+@mixin bordered-button {
+  border-radius: 15px;
+  border: 5px solid rgb(140, 167, 156);
+  padding: 3px;
+  display: inline-block;
+}
+
+h2{
+  text-decoration: wavy;
+  color: cadetblue;
+  text-align: center;
+}
+
+img{
+  margin: 5 auto;
+  display: block;
+}
+
+p{
+  border-top: 2px rgb(120, 31, 234);
+  padding: 0%;
+}
+
+div.meta-data {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 8px 0;
+}
+span.author {
+@include bordered-button-span;
+color: #fff;
+
+&::before {
+  content: "Author: ";
+  color: #000;
+}
+}
+
+div.tags {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px 0;
+
+  span {
+    @include bordered-button-span;
+    margin-bottom: 8px;
+    color: rgb(40, 102, 48);
+  }
+  span::before {
+    content: "#";
+    color: #fff;
+  }
+}
