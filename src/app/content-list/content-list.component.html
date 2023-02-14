@@ -1,1 +1,3 @@
-<p>content-list works!</p>
+<app-content-list-item *ngFor="let discipline  of martialArts; even as evenDiscipline; odd as oddDiscipline" 
+[contentItemInput]="discipline"
+[ngClass]="{'even-discipline': evenDiscipline, 'odd-discipline': oddDiscipline}"></app-content-list-item>
