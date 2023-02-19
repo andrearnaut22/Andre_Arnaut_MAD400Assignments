@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { MockContentTs } from '../data/mock-content.ts'; //<- need to fix the error here
+import { MockContentTs } from '../data/mock-content.ts';
 import { IContent } from '../models/icontent';
 
 @Injectable({

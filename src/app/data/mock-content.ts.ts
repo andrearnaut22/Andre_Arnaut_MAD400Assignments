@@ -1,7 +1,7 @@
 import { IContent } from '../models/icontent';
 
 export class MockContentTs {
-    public static martialArts: IContent[] = 
+    public static martialArtsArray: IContent[] = 
 [{
       id: 0,
       discipline: "Wrestling",
