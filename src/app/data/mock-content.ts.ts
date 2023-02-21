@@ -40,3 +40,10 @@ export class MockContentTs {
     }];
     
 }
+
+export const invalidmartialArray: IContent = {
+  id: -1,
+  discipline: "",
+  author: "",
+  type: ""
+};
