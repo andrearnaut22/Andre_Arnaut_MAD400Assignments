@@ -11,6 +11,6 @@ export class MartialArtsServiceService {
   constructor() { }
 
   getContent(): Observable<IContent[]>  {
-    return of(MockContentTs.martialArts);
+    return of(MockContentTs.martialArtsArray);
   }
 }

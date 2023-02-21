@@ -8,13 +8,14 @@ import { MartialArtsServiceService } from '../service/martial-arts.service.servi
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent implements OnInit {
-
+      martialArtsArray: IContent[];
   constructor(private MartialArtsServiceService: MartialArtsServiceService) {
+
     this.martialArtsArray = [];
   }
   ngOnInit(): void {
     this.MartialArtsServiceService.getContent().subscribe((martialArtsArray: IContent[])=> {
-      this.martialArtsArray = martialArts;
+      this.martialArtsArray = martialArtsArray;
     });
   }
 }
