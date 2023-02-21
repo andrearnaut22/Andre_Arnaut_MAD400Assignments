@@ -1,6 +1,9 @@
 import { IContent } from '../models/icontent';
 
 export class MockContentTs {
+    static push(testAddDiscipline: IContent) {
+      throw new Error('Method not implemented.');
+    }
     public static martialArtsArray: IContent[] = 
 [{
       id: 0,

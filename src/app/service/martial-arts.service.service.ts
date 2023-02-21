@@ -7,6 +7,10 @@ import { IContent } from '../models/icontent';
   providedIn: 'root'
 })
 export class MartialArtsServiceService {
+  addContentItem(testAddDiscipline: IContent): Observable<IContent[]> {
+    MockContentTs.push(testAddDiscipline);
+    //return of(MockContentTs) need to fix this error
+  }
 
   constructor() { }
 
@@ -14,13 +18,13 @@ export class MartialArtsServiceService {
     return of(MockContentTs.martialArtsArray);
   }
 
-  // getContentItem(index: number): Observable<IContent> {
-  //   let martialArtsArrayFound: IContent = invalidmartialArray;
-  //   for(let i = 0; i < MockContentTs.length; i++){
-  //     if(martialArtsArray[i].id == index){
-  //       martialArtsArrayFound = martialArtsArray[i];
-  //     }
-  //   }
-  //   return of (martialArtsArrayFound);
-  // }
+  getContentItem(index: number): Observable<IContent> {
+    let martialArtsArrayFound: IContent = invalidmartialArray;
+    for(let i = 0; i < MockContentTs.length; i++){
+      // if(martialArtsArray[i].id == index){
+      //   martialArtsArrayFound = martialArtsArray[i];
+      // } fix these errors as well
+    }
+    return of (martialArtsArrayFound);
+  }
 }
