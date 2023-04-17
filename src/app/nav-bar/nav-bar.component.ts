@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IContent } from '../models/icontent';
 
 @Component({
   selector: 'app-nav-bar',
