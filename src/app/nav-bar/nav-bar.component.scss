@@ -1,0 +1,22 @@
+:host{
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: var(--mad400-nav-bar-height);
+    box-sizing: border-box;
+    padding: 16px;
+    background: cadetblue;
+
+    a{
+        display: inline;
+        padding: 5px;
+        border: cadetblue;
+        border-radius: 5px;
+        background-color: red;
+        color: gainsboro;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
